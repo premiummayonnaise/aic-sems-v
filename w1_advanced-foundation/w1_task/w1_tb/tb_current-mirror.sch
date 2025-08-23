@@ -27,8 +27,11 @@ C {lab_pin.sym} 720 -170 0 1 {name=p4 sig_type=std_logic lab=VDD}
 C {lab_pin.sym} 720 -300 0 1 {name=p5 sig_type=std_logic lab=VSS}
 C {gnd.sym} 720 -230 0 0 {name=l1 lab=GND}
 C {lab_pin.sym} 720 -110 0 1 {name=p8 sig_type=std_logic lab=VSS}
-C {devices/code_shown.sym} -630 -370 0 0 {name=NGSPICE only_toplevel=true
+C {devices/code_shown.sym} -640 -460 0 0 {name=NGSPICE only_toplevel=true
 value="
+
+.param temp = -41
+
 .control
 tran 0.1u 40u
 plot I(Vmeas) I(Vmeas1) I(Vmeas2) I(Vmeas3) I(Vmeas4)
